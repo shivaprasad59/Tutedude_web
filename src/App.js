@@ -11,12 +11,12 @@ function App() {
     
       <div>
         <div>
-        <nav className="navbar navbar-expand-lg navbar-light bg-light">
+        <nav className="navbar navbar-expand-lg navbar-light bg-light ">
   <div className="container-fluid">
     <a className="navbar-brand" href="#"><img className="logo" src={logo} alt="logo"/></a>
     
-    <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span><img  className="profile color"src={profile} alt="profile"/>Profile</span>
+    <button className="navbar-toggler icon"type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" >
+      <h6 className='profname'>Profile</h6>
     </button>
     <div className="collapse navbar-collapse " id="navbarSupportedContent">
       <ul className="navbar-nav ms-auto mb-2 mb-lg-0">
@@ -33,15 +33,15 @@ function App() {
     </div>
   </div>
 </nav>
+
+        
         </div>
-       <Routes>
-        <Route path="/Card" element={<Card/>}/>
-        <Route path="/" element={<Refer/>}/>
-       </Routes>
-        
-    <Link className="nav-link active Terms" to="/Card">Friends Referred</Link>
+        <Routes>
+        <Route path="/" element={<Card/>}/>
+        <Route path='/Refer' element={<Refer/>}/>
+            </Routes>
+    <Link className="nav-link  Terms" to="/">Friends Who Enrolled</Link>
        <div className="Terms">
-        
     <Link className="nav-link active" to="/">Terms & Conditions</Link>
     </div>
       </div>
