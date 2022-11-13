@@ -52,7 +52,7 @@
   margin-right: 3%;
   box-shadow: 3px 4px 4px black;
   background-image: linear-gradient(to right,rgb(230, 84, 27),rgb(117, 8, 131));
-  width: min-content;
+  width:400px
 }
 ul{
   list-style: none;
